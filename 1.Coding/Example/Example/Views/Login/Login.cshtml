@@ -1,0 +1,107 @@
+﻿@model Example.Program
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<style>
+        .margin-7{
+            margin-top:2px;
+        }
+        .minwidth{
+            margin-top : 10px;
+            min-width: 80px;
+        }
+        .loginbox {
+            /*width: 400px;
+            height: 400px;*/
+            background-color: #e3e5e3;
+            color: #000000;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            /*transform: translate(-50%,-50%);*/
+            box-sizing: border-box;
+            padding: 65px 20px;
+            margin-top: -209px;
+            margin-left: -175px;
+        }
+
+        .loginbox input[type="text"], input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #000;
+            /*background: transparent;*/
+            outline: none;
+            /*height: 40px;*/
+            /*width: 280px;*/
+            color: black;
+            font-size: 14px;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            padding: 2px 7px ;
+            width: 100%;
+
+        }
+
+        .loginbox input[type="submit"] {
+            border: none;
+            outline: none;
+            min-width: 150px;
+            background-color: #2171e0;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 5px;
+            float: right;
+
+        }
+
+        .loginbox input[type="submit"]:hover {
+            cursor: pointer;
+            background: #ffc107;
+            color: #000;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+    </style>*@
+<h2></h2>
+<link href="~/css/style.css" rel="stylesheet" />
+<body>
+    <div class="row">
+        <div class="loginbox">
+            @*<img src="avatar.png" class="avatar">*@
+            <h1>Login System</h1>
+            <div class="row">
+                <div class="col-xs-3 margin-7">
+                    <span><b>Username</b></span>
+                </div>
+                <div class="col-xs-9">
+                    <input type="text" name="" placeholder="Username" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 margin-7">
+                    <span><b>Password</b></span>
+                </div>
+                <div class="col-xs-9">
+                    <input type="password" name="" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-primary btn-sm minwidth" style="float:right" type="submit" name="">Login</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
